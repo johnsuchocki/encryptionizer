@@ -20,7 +20,9 @@ public class UserInterface {
 				System.out.println("What would you like to do?");
 				System.out.println("(1) Encrypt a message & display.");
 				System.out.println("(2) Decrypt a message you input.");
-				System.out.println("(3) Exit program.");
+/*				System.out.println("(3) Encrypt using a less crackable algorithm.");
+				System.out.println("(4) Decrypt a message using the strong encryption.");    */
+				System.out.println("(5) Exit program.");
 			
 				menuInput = userInput.nextLine();
 				menuInputValid = Validation.menuValidation(menuInput);
@@ -40,7 +42,9 @@ public class UserInterface {
 				decrypted = Decrypt.decryptionizer(decryptThis);
 				System.out.println(decrypted);
 				break;
-			case "3":
+				
+				
+			case "5":
 				userQuit = true;
 				System.out.println("Encryption app closed.");
 				break;	
